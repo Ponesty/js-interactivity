@@ -1,25 +1,25 @@
 //console.log("It's Alive!");
-
-
-
-let movie = document.createElement("li");
-
-let movieTitle = document.createElement("span");
-
-let ul = document.querySelector("ul");
-
-let form = document.querySelector("form");
-
-let addMovie = (event) =>{
+let addMovie = event =>{
     event.preventDefault();
     let inputField = document.querySelector("input");
+    let movie = document.createElement("li");
+    let movieTitle = document.createElement("span");
     movieTitle.textContent = inputField.value;
     movie.appendChild(movieTitle);
+    let ul = document.querySelector("ul");
     ul.appendChild(movie);
 };
 
 
 
+
+
+
+
+
+
+let form = document.querySelector("form");
+
+
 form.addEventListener("submit",addMovie);
-//console.log(ul);
 
